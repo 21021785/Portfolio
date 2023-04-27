@@ -1,0 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
+:root {
+    /*font-family:  "Proxima Nova", "Courier New", monospace;*/
+      font-family: 'Poppins';
+    
+    /* default colorscheme */
+    --bg-c: #313034;
+    --text-c: #faf9f5;
+    --accent-c: #faea4c;
+    --shadow-c: #3f3a77;
+    --shadow-d: #110647;
+    /* colour scheme*/
+    color: var(--text-c);
+    background-color: var(--bg-c);
+    text-shadow: 0px 0px 20px var(--shadow-c),0px 0px 20px var(--shadow-c);
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+#lightmode {
+    /*empty for now, change colors later*/
+    --bg-c: #FFF;
+    --text-c: #000;
+    --accent-c: #faea4c;
+    --shadow-c: #3f3a77;
+}
+
+alt {
+  color: var(--accent-c);
+}
+

@@ -1,0 +1,33 @@
+.title {
+    font-size: 70px;
+    color: var(--accent-c);
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.col-1 {
+    display: inline-block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+  
+.col-3 {
+    display: inline-block;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+}
+
+
+.images {
+    width: 40%;
+    margin: 0 0 10% 0%;
+}

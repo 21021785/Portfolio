@@ -1,0 +1,80 @@
+header{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--bg-c);
+}
+
+li a{
+    display: block;
+    color: var(--text-c);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 40px;
+    font-weight: 900;
+}
+li button {
+    background-color: var(--bg-c);
+    border: none;
+    color: var(--text-c);
+    padding: 14px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:medium;
+}
+li input {
+    display: block;
+    color: var(--bg-c);
+    text-align: center;
+}
+li a:hover:not(.active),
+li button:hover:not(.active) {
+    color: var(--accent-c);
+    transition: .5s;
+}
+li a div .logo{
+    background-image: url("/images/Personal\ Logo\ Light\ BG.svg");
+    height: 100%;
+    width: auto;
+    min-height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+/* li a div .logo:active{
+    background-image: url("/images/Personal\ Logo\ Dark\ BG.svg");
+    height: 100%;
+    width: auto;
+    min-height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+li a.active,
+li button.active {
+    color: var(--accent-c);
+    
+}
+/* li a.active:before,
+li button.active:before {
+    content:'';
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    margin: auto;
+    z-index: -1;
+    border: 1px solid purple;
+    border-radius: 5px;
+    left:40px;
+} */
+
