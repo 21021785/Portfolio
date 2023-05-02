@@ -12,22 +12,29 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 30px;
 }
   
 .col-1 {
     display: inline-block;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    width: 25%;
 }
   
 .col-3 {
     display: inline-block;
-    grid-template-columns: 3fr;
-    grid-template-rows: 1fr;
+    width: 75%;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--accent-c);
 }
 
 
 .images {
-    width: 40%;
+    width: 100%;
     margin: 0 0 10% 0%;
+    vertical-align: middle;
+}
+
+p {
+    margin: 20 0
 }
