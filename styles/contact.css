@@ -31,8 +31,23 @@ main {
     margin-top: 30px;
 }
 
-
 .index .photoframe {
+    justify-content: center;
+    position: relative;
+    right: 250px;
+}
+
+.index .photoframe img {
+    width: auto;
+    height: 450px;
+    position: absolute;
+    bottom: -35px;
+    right: -340px;
+    margin:2%;
+    transform: scaleX(-1);
+}
+
+.index .photoframe .box {
     display: block;
     position: absolute;
     background: var(--bg-c);
@@ -84,9 +99,6 @@ article {
 .col-6 {
     display: inline-block;
     width: 47%;
-    position:relative;
-    overflow: hidden;
-    text-align: center;
 }
 
 
@@ -117,37 +129,12 @@ article {
     margin-left: 6%;
 }
 
-.photoframe {
-    margin: 10% 0 10% 0%;
-    vertical-align: middle;
-    transition: 0.5s;
+a {
+    text-decoration: none;
+    color: white
 }
 
-.photoframe:hover{
-    transition: 0.5s;
-    overflow: hidden;
-    filter:blur(6px);
-    margin: 10% 0 10% 0%;
-}
-
-
-.overlay-text {
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--accent-c);
-    font-size: 24px;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    text-shadow: 0px 0px 20px var(--shadow-d);
-    
-    
-}
-.photoframe:hover .overlay-text {
-    opacity: 1;
-}
+  
 
 
 
