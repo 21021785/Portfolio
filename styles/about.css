@@ -127,9 +127,10 @@ article {
     font-weight: bolder; 
     width: 80%; 
     margin-left: 6%;
+    background-color: var(--bg-c);
 }
 
-  
+
 
 
 

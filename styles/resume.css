@@ -123,13 +123,15 @@ article {
     transition: 0.5s;
 }
 
-.photoframe:hover{
-    transition: 0.5s;
-    overflow: hidden;
+
+#resumeimg:hover{
     filter:blur(6px);
-    margin: 10% 0 10% 0%;
+    transition: 0.5s;
 }
 
+#resumeimg{
+    transition: 0.5s;
+}
 
 .overlay-text {
     position: absolute;
