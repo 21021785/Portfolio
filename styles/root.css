@@ -38,7 +38,7 @@ alt {
 html {
   --s: 140px; /* control the size */
   
-  --_g: var(--bg-c) 52%,#444126 /* first color */ 54% 57%,#00000000 59%; 
+  --_g: var(--bg-c) 52%,#444126ad /* first color */ 54% 57%,#00000000 59%; 
   background: 
    radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
    radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
@@ -46,4 +46,28 @@ html {
    radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
    var(--shadow-c); /* second color */
   background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track-piece {
+  background-color:  var(--bg-c);
+  box-shadow: inset 0 0 1px var(--accent-c); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  var(--shadow-c);
+  /*box-shadow: inset 0 0 10px var(--shadow-d);  */
+  box-shadow: 0 0 10px var(--shadow-d);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--shadow-c); 
 }

@@ -6,32 +6,39 @@
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="viewport" content="width=1200px">
     <title>Resume</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles/root.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/resume.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
 
     <header style="margin-bottom: 30px;">
-        <ul class="navbar">
+        <ul class = "navbar">
             <li style="float: right; padding-top: 15px"><a href="contact.html">Contact</a></li>
             <li style="float: right; padding-top: 15px"><a href="resume.html" style="color: var(--accent-c);">Resume</a></li>
-            <li style="float: right; padding-top: 15px"><a href="work.html">Works</a></li>
-            <li style="float: right; padding-top: 15px"><a href="about.html">About
-                    me</a></li>
-            <li style="float: right;"><a href="index.html">
-                    <div style="min-width: 70px" class="logo"><img src="images\Personal Logo Dark BG.svg"></div>
-                </a></li>
+            <li style="float: right;" class="dropdown">
+                <a href="work.html" class="dropbtn">Works</a>
+                <div class="dropdown-content">
+                    <a href="designs.html">Designs</a>
+                    <a href="websites.html">Websites</a>
+                    <a href="photos.html">Photographs</a>
+                    <a href="apps.html">Applications</a>
+                </div>
+            </li>
+            <li style="float: right; padding-top: 15px"><a href="about.html">About me</a></li>
+            <li style="float: right;"><a href="index.html"><div style="min-width: 70px" class="logo"><img src="images\Personal Logo Dark BG.svg"></div></a></li>
         </ul>
     </header>
+
 
     <div>
         <div class="col-6" style=" font-size: 400%; font-weight: bold; justify-content: center; align-items: center; text-align: center; padding-top: 20%; color: var(--accent-c);">
             Want my CV?<br>
-            See it here ->
+            See it here <i class="bi bi-arrow-right"></i>
         </div>
         <div class="col-6" style="float: right; font-size: 150%; font-weight: bold; justify-content: center; align-items: center;">
             <div class="photoframe">
