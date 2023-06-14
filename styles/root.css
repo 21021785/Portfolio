@@ -1,34 +1,34 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
 :root {
-    /*font-family:  "Proxima Nova", "Courier New", monospace;*/
-      font-family: 'Poppins';
-    
-    /* default colorscheme */
-    --bg-c: #313034;
-    --text-c: #faf9f5;
-    --accent-c: #faea4c;
-    --shadow-c: #3f3a77;
-    --shadow-d: #110647;
-    /* colour scheme*/
-    color: var(--text-c);
-    background-color: var(--bg-c);
-    text-shadow: 0px 0px 20px var(--shadow-c),0px 0px 20px var(--shadow-c);
+  /*font-family:  "Proxima Nova", "Courier New", monospace;*/
+  font-family: 'Poppins';
 
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  /* default colorscheme */
+  --bg-c: #313034;
+  --text-c: #faf9f5;
+  --accent-c: #faea4c;
+  --shadow-c: #3f3a77;
+  --shadow-d: #110647;
+  /* colour scheme*/
+  color: var(--text-c);
+  background-color: var(--bg-c);
+  text-shadow: 0px 0px 20px var(--shadow-c), 0px 0px 20px var(--shadow-c);
 
-    
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+
 
 }
 
 #lightmode {
-    /*empty for now, change colors later*/
-    --bg-c: #FFF;
-    --text-c: #000;
-    --accent-c: #faea4c;
-    --shadow-c: #3f3a77;
+  /*empty for now, change colors later*/
+  --bg-c: #FFF;
+  --text-c: #000;
+  --accent-c: #faea4c;
+  --shadow-c: #3f3a77;
 }
 
 alt {
@@ -36,16 +36,20 @@ alt {
 }
 
 html {
-  --s: 140px; /* control the size */
-  
-  --_g: var(--bg-c) 52%,#444126ad /* first color */ 54% 57%,#00000000 59%; 
-  background: 
-   radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
-   radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
-   radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
-   radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
-   var(--shadow-c); /* second color */
-  background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+  --s: 140px;
+  /* control the size */
+
+  --_g: var(--bg-c) 52%, #444126ad
+    /* first color */
+    54% 57%, #00000000 59%;
+  background:
+    radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2),
+    radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0,
+    radial-gradient(farthest-side at 133.33% 50%, var(--_g)),
+    radial-gradient(farthest-side at 50% -33.33%, var(--_g)),
+    var(--shadow-c);
+  /* second color */
+  background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
 }
 
 /* Scrollbar */
@@ -55,13 +59,13 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track-piece {
-  background-color:  var(--bg-c);
-  box-shadow: inset 0 0 1px var(--accent-c); 
+  background-color: var(--bg-c);
+  box-shadow: inset 0 0 1px var(--accent-c);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:  var(--shadow-c);
+  background: var(--shadow-c);
   /*box-shadow: inset 0 0 10px var(--shadow-d);  */
   box-shadow: 0 0 10px var(--shadow-d);
   border-radius: 100px;
@@ -69,7 +73,7 @@ html {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--shadow-c); 
+  background: var(--shadow-c);
 }
 
 * {
@@ -101,7 +105,8 @@ html {
   pointer-events: none;
   transition: width .3s, height .3s, opacity .3s;
   z-index: 9999;
-  box-shadow: 0 0 10px var(--shadow-c);;
+  box-shadow: 0 0 10px var(--shadow-c);
+  ;
 }
 
 .hover {
@@ -112,5 +117,5 @@ html {
 .cursorinnerhover {
   width: 50px;
   height: 50px;
-  opacity: .5;
+  opacity: .9;
 }
