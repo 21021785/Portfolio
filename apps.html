@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/root.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/apps.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
@@ -42,26 +43,63 @@
             Applications
         </div>
         <div class="row">
+            <!--
+            <div class="col-2-5">
+                <a href="https://github.com/21021785/My_Modules"><video width="100%" loop muted autoplay id="video"><source src="images/apps-VR-Escape-Room.mp4" type="video/mp4"></video></a>
+                <div class="overlay-text">See Source Code</div>
+            </div>
+        -->
+            <div class="col-2-5">
+                <video width="100%" loop muted autoplay id="video"><source src="images/apps-VR-Escape-Room.mp4" type="video/mp4"></video>
+            </div>
+            <div class="col-3-5" style="text-align: right;">
+                <p>Escape From Reality</p>
+                <p style="font-size: smaller; color: white;">This is a VR escape room made in Unity with the theme of escaping from the reality of life.</p>
+                    <button class="read-more-button" data-modal-id="myModal5">Read More</button>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <p>AR Name Card</p>
+                <p style="font-size: smaller; color: white;">This is a AR application that can display a AR object over a name card, specifically my name card.
+                    </p>
+                    <button class="read-more-button" data-modal-id="myModal6">Read More</button>
+            </div>
+            <div class="col-1">
+                <video width="100%" loop muted autoplay id="video"><source src="images/apps-AR-Name-Card.mp4" type="video/mp4"></video>
+            </div>
+            <!--
+            <div class="col-1">
+                <a href="https://github.com/21021785/My_Modules"><video width="100%" loop muted autoplay id="video"><source src="images/apps-AR-Name-Card.mp4" type="video/mp4"></video></a>
+                <div class="overlay-text">See Source Code</div>
+            </div>
+        -->
+        </div>
+
+        <div class="row">
             <div class="col-1">
                 <a href="https://github.com/21021785/My_Modules"><img src="images/apps-course-mods.png" class="images"></a>
                 <div class="overlay-text">See Source Code</div>
             </div>
             <div class="col-3" style="text-align: right;">
                 <p>Course Modules App</p>
-                <p style="font-size: smaller;">This app can be used to view the
+                <p style="font-size: smaller; color: white;">This app can be used to view the
                     student's semester modules and 
                     their respective information.</p>
+                    <button class="read-more-button" data-modal-id="myModal1">Read More</button>
 
             </div>
         </div>
         <div class="row">
             <div class="col-3">
                 <p>NDP Songs App</p>
-                <p style="font-size: smaller;">This app can be used to add,
+                <p style="font-size: smaller; color: white;">This app can be used to add,
                     rate and view the various 
                     songs of the past years'
                     National Day songs.
                     </p>
+                    <button class="read-more-button" data-modal-id="myModal2">Read More</button>
             </div>
             <div class="col-1">
                 <a href="https://github.com/21021785/NDPSongs"><img src="images/apps-NDP-songs.png" class="images" style="float: right"></a>
@@ -75,11 +113,12 @@
             </div>
             <div class="col-3" style="text-align: right;">
                 <p>To-Do-List App</p>
-                <p style="font-size: smaller;">This app can be used to add 
+                <p style="font-size: smaller; color: white;">This app can be used to add 
                     various tasks to do and mark them
                     as done. We can even add and
                     remove tasks by index.
                     </p>
+                    <button class="read-more-button" data-modal-id="myModal3">Read More</button>
                 
 
             </div>
@@ -87,11 +126,12 @@
         <div class="row">
             <div class="col-3">
                 <p>Restaurant Reservation App</p>
-                <p style="font-size: smaller;">This app can be used to
+                <p style="font-size: smaller; color: white;">This app can be used to
                     book reservations for a 
                     restaurant on any time and 
                     date for any pax.
                     </p>
+                    <button class="read-more-button" data-modal-id="myModal4">Read More</button>
             </div>
             <div class="col-1">
                 <a href="https://github.com/21021785/L04_Reservation"><img src="images/apps-restaurant.png" class="images" style="float: right"></a>
@@ -99,8 +139,111 @@
             </div>
         </div>
     </div>
+
+    <!-- First Modal -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/apps-course-mods.png" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px;">Course Modules App</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This app can help a student check the information of their modules.<br>
+                It was made as an assignment in one of my modules and was made in 1 day.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Java, XML, Android Studio</p>
+        </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/apps-NDP-songs.png" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px; text-align: center;">NDP Songs App</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This app allows the user to store a list of NDP songs. They can add, view, edit and delete any of them.<br>
+                The information is stored in a local database and is persistent even if you close and app.<br>
+                It was made as an assignment in one of my modules and was made in 1 day.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Java, XML, Android Studio</p>
+        </div>
+    </div>
+
+    <!-- Third Modal -->
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/apps-to-do.png" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px;">To-Do List App</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This app allows users to add and remove items in the to-do list, which updates every time a change is made.<br>
+                It was made as an assignment in one of my modules and was made in 1 day.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Java, XML, Android Studio</p>
+        </div>
+    </div>
+
+    <!-- Fourth Modal -->
+    <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/apps-restaurant.png" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px;">Restaurant Reservation App</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This app allows users to book a spot in a restaurant with their information for any time and day.<br>
+                It was made as an assignment in one of my modules and was made in 1 day.
+            </p>
+            <p style="color: white; font-size: 20px;">Note: This is purely front-end work, there is no connection to current data and data is not updated.</p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Java, XML, Android Studio</p>
+        </div>
+    </div>
+
+    <div id="myModal5" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <video width="100%" loop muted autoplay id="video" style="text-align: center; width: 50%;"><source src="images/apps-VR-Escape-Room.mp4" type="video/mp4"></video>
+                <h1 style="font-size: 50px;">Escape From Reality</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This is a VR game designed in Unity with the theme of escape room puzzle game. While most people design their game around escaping a room, I designed mine to convey the idea of escaping from reality.<br>
+                The game follows my life as I leave house, take the MRT to school, complete school modules and finally, escape.<br>
+                I want to remind players that it is okay to want to escape from the reality of their lives sometimes. It is okay to take a break, just do not break yourself.<br>
+                The actual project consisted of more than just the game, with a written game design document, flow chart, adobe animate renders and storyboard.
+            </p>
+            <p style="color: white; font-size: 20px;">This game was made as an assignment in one of my modules and was made in 3 weeks.<br>
+            No source code can be shown as the file is too big for Github.</p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: C#, Unity, Wave XR, Essence, Online Assets</p>
+        </div>
+    </div>
+
+    <div id="myModal6" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <video width="100%" loop muted autoplay id="video" style="text-align: center; height: 40%;"><source src="images/apps-AR-Name-Card.mp4" type="video/mp4"></video>
+                <h1 style="font-size: 50px;">AR Name Card</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This is a AR application that can identify an object and render a digital object over it.<br>
+                I used my namecard as an example and using Vuforia, I could display an asset that I found on the unity store directly onto namecard, which I used my monitor to display since I do not have physical copies of it.
+            </p>
+            <p style="color: white; font-size: 20px;">This was made as an assignment in one of my modules and was made in 2 days.<br>
+                No source code can be shown as the file is too big for Github.</p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: C#, Unity, Vuforia, Online Assets</p>
+        </div>
+    </div>
     
     <script src="scripts/root.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 
 </html>

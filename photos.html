@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/root.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/photos.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
@@ -50,6 +51,7 @@
                 <p>To Be Young and Curious</p>
                 <p>Camera: Canon M50</p>
                 <p>Lens: Canon 50mm f/1.8</p>
+                <button class="read-more-button" data-modal-id="myModal1">Read More</button>
 
             </div>
         </div>
@@ -58,6 +60,7 @@
                 <p>Fatherhood</p>
                 <p>Camera: Canon M50</p>
                 <p>Lens: Canon 50mm f/1.8</p>
+                <button class="read-more-button" data-modal-id="myModal2">Read More</button>
             </div>
             <div class="col-1">
                 <a href="https://www.instagram.com/p/B-LOFm3gWyu/"><img src="images/Photos-2.jpeg" class="images" style="float: right"></a>
@@ -73,6 +76,7 @@
                 <p>Fireworks @ Marina Bay</p>
                 <p>Camera: Canon M50</p>
                 <p>Lens: Canon 50mm f/1.8</p>
+                <button class="read-more-button" data-modal-id="myModal3">Read More</button>
                 
 
             </div>
@@ -82,6 +86,7 @@
                 <p>Mobile Kopitiam</p>
                 <p>Camera: Canon M50</p>
                 <p>Lens: Canon 50mm f/1.8</p>
+                <button class="read-more-button" data-modal-id="myModal4">Read More</button>
             </div>
             <div class="col-1">
                 <a href="https://www.instagram.com/p/CfjXpkzrXfc/"><img src="images/Photos-4.jpeg" class="images" style="float: right"></a>
@@ -91,7 +96,75 @@
     </div>
 
 
+    <!-- First Modal -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/Photos-1.jpeg" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px;">To Be Young and Curious</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This photograph was taken at the Marina Barriage. I was on an article shoot with Singapore Press Holdings (SPH), and I saw these kids running around and playing. I decided to capture a shot of one of them playing with bubbles.<br>
+                This shot was truly a miracle as the timing, framing, background, bokeh, and action was captured perfectly. I can perhaps say that this is my best street photography shot by far.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Mirrorless Camera, Snapseed</p>
+        </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/Photos-2.jpeg" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px; text-align: center;">Fatherhood</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This photograph was captured in an MRT on the way to a shoot with 2 of my friends. I remember pulling out my camera in the busy MRT and being fearful of the judgemental looks I might receive.<br>
+                I shot.<br>
+                Unsure if people were looking at me, I looked at the photo. It was frame perfect. With the perfect amount of foreground and background, nothing major blocking my subject. I was happy with this photograph.<br>
+                I think this photograph speaks to me so much as I grew up without a father. Seeing a child being cared for by his father was something I wish I could experience, and I wish nothing but happiness to this family.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Mirrorless Camera, Snapseed</p>
+        </div>
+    </div>
+
+    <!-- Third Modal -->
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/Photos-5.jpeg" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px;">Fireworks @ Marina Bay</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This photograph was captured during the celebration of the new year transitioning from 2022 to 2023. This was shot on a new years outing which I organized for a small group of people under SPH.<br>
+                This shot was actually a double exposure of the same fireworks. The bottom half and the top half is the same set of fireworks that was shot milliseconds apart. Stacking them together helps convery an image that is more full.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Mirrorless Camera, Snapseed</p>
+        </div>
+    </div>
+
+    <!-- Fourth Modal -->
+    <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/Photos-4.jpeg" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px;">Mobile Kopitiam</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This photograph was shot near Lau Pa Sat, where I saw a man selling drinks in a mobile drinks stand. It reminds me of lemonade stands that kids make, but modernized and monetized. <br>
+                I also managed to capture someone purchasing a drink from the stand, bringing more life to the image.<br>
+                Being so late at night, I decided not to ruin the timing of the shot and kept the image dark to convery the time it was shot.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Mirrorless Camera, Snapseed</p>
+        </div>
+    </div>
+    
     <script src="scripts/root.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 
 </html>

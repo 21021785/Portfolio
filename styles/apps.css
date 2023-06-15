@@ -65,8 +65,46 @@
     opacity: 1;
 }
 
+.col-2-5 {
+    display: inline-block;
+    width: 40%;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.col-2-5:hover .overlay-text {
+    opacity: 1;
+}
+
+.col-3-5 {
+    display: inline-block;
+    width: 60%;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--accent-c);
+}
+
 
 
 p {
     margin: 20 0
+}
+
+
+button {
+    color: var(--accent-c);
+    background-color: var(--bg-c);
+    font-size: 50px;
+    border-radius: 100px;
+    width: 50%;
+    height: 80px;
+    box-shadow: -10px -10px 30px var(--shadow-c), 10px 10px 30px var(--shadow-d);
+    padding: 0;
+    border: none;
+    font-family: 'Poppins';
+}
+
+button:active {
+    box-shadow: inset -5px -5px 7px var(--shadow-c), inset 5px 5px 7px var(--shadow-d);
 }

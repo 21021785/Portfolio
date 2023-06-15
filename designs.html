@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/root.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/designs.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
@@ -48,14 +49,15 @@
             </div>
             <div class="col-3" style="text-align: right;">
                 <p>Hi-Fi Mobile Portfolio</p>
-                <p style="font-size: smaller;">This is a mobile portfolio made in Adobe XD, which is a mockup of a portfolio similar to this website</p>
-
+                <p style="font-size: smaller; color: white;">This is a mobile portfolio made in Adobe XD, which is a mockup of a portfolio similar to this website</p>
+                <button class="read-more-button" data-modal-id="myModal1">Read More</button>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <p>Hi Fi SADeaf App</p>
-                <p style="font-size: smaller;">This is an app made for the deaf made in Adobe XD, which is user-friendly for the deaf and can also teach them sign language.</p>
+                <p>Hi-Fi SADeaf App</p>
+                <p style="font-size: smaller; color: white;">This is an app made for the deaf made in Adobe XD, which is user-friendly for the deaf and can also teach them sign language.</p>
+                <button class="read-more-button" data-modal-id="myModal2">Read More</button>
             </div>
             <div class="col-1">
                 <a href="https://xd.adobe.com/view/97859302-7929-4802-a0bf-16c3c158c69b-c2d6/?fullscreen"><img src="images/designs-SADeaf.png" class="images" style="float: right"></a>
@@ -69,8 +71,8 @@
             </div>
             <div class="col-3" style="text-align: right;">
                 <p>Personal Poster</p>
-                <p style="font-size: smaller;">This is a personal poster made for myself, which introduces myself. It was part of an assignment for a module.</p>
-
+                <p style="font-size: smaller; color: white;">This is a personal poster made for myself, which introduces myself. It was part of an assignment for a module.</p>
+                <button class="read-more-button" data-modal-id="myModal3">Read More</button>
                 
 
             </div>
@@ -78,8 +80,8 @@
         <div class="row">
             <div class="col-3">
                 <p>Custom Typography</p>
-                <p style="font-size: smaller;">This is a set of custom typefaces which I designed for a module. It is meant to have a 3D effect all the way to the end.</p>
-
+                <p style="font-size: smaller; color: white;">This is a set of custom typefaces which I designed for a module. It is meant to have a 3D effect all the way to the end.</p>
+                <button class="read-more-button" data-modal-id="myModal4">Read More</button>
             </div>
             <div class="col-1">
                 <a href="images/designs-typography.png"><img src="images/designs-typography.png" class="images" style="float: right"></a>
@@ -88,7 +90,75 @@
         </div>
     </div>
 
+    <!-- First Modal -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/designs-portfolio.png" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px;">Hi-Fi Mobile Portfolio</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This hi-fi mockup is a prototype of my mobile portfolio app. I created this before my portfolio website, and it is very inspired by my mobile portfolio app.<br>
+                I chose the same neumorphic style, typography, colour scheme etc in an effort to make it as consistent as possible.<br>
+                It was an end-module project in one of my modules and was made in 1 week.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Adobe XD, Adobe Illustrator, Adobe Photoshop</p>
+        </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/designs-SADeaf.png" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px; text-align: center;">Hi-Fi SADeaf App</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This hi-fi mockup is a prototype for an app that could be made for the Singapore Assosiation for the Deaf (SADeaf).<br>
+                Of course, as an app developed for people with disabilities, there are accessibility concerns and they are addressed in this app. There is no need for any audio output from the app.<br>
+                This app can allow users to sign in and out, take courses, practice sign language, edit personal and application settings, quick dial close contacts and show a map to SADeaf.
+                It was made as an assignment in one of my modules and was made in 1 day.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Adobe XD, Adobe Illustrator, Adobe Photoshop</p>
+        </div>
+    </div>
+
+    <!-- Third Modal -->
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/designs-poster.png" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px;">Personal Poster</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This poster was made to be a bold showcase of who I am, being a personal statement. It also showcases my logo, but this time blown up to represent who I am. <br>
+                It was an end-module project in one of my modules and was made in 1 week.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Adobe Illustrator</p>
+        </div>
+    </div>
+
+    <!-- Fourth Modal -->
+    <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/designs-typography.png" style="text-align: center; height: 40%;">
+                <h1 style="font-size: 50px;">Custom Typography</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This is a set of fonts that I created. It is meant to have a never-ending hole to the back. We were told make our typography as unique as possible, so I chose to make it 3-dimensional, using sharp angles.<br>
+                It was made as an assignment in one of my modules and was made in 1 day.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: Adobe Illustrator</p>
+        </div>
+    </div>
+    
     <script src="scripts/root.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 
 </html>

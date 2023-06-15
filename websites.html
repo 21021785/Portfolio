@@ -1,4 +1,3 @@
-
 <html lang="en">
 
 <head>
@@ -10,13 +9,14 @@
     <link rel="stylesheet" href="styles/root.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/websites.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
     <header>
-        <ul class = "navbar">
+        <ul class="navbar">
             <li style="float: right; padding-top: 15px"><a href="contact.html">Contact</a></li>
             <li style="float: right; padding-top: 15px"><a href="resume.html">Resume</a></li>
             <li style="float: right;" class="dropdown">
@@ -29,7 +29,9 @@
                 </div>
             </li>
             <li style="float: right; padding-top: 15px"><a href="about.html">About me</a></li>
-            <li style="float: right;"><a href="index.html"><div style="min-width: 70px" class="logo"><img src="images\Personal Logo Dark BG.svg"></div></a></li>
+            <li style="float: right;"><a href="index.html">
+                    <div style="min-width: 70px" class="logo"><img src="images\Personal Logo Dark BG.svg"></div>
+                </a></li>
         </ul>
     </header>
 
@@ -42,62 +44,145 @@
             Websites
         </div>
         <div class="row">
-            <div class="col-1">
-                <a href="https://21021785.github.io/L10-Assignment/"><img src="images/website-covid.png" class="images"></a>
+            <div class="col-2-5">
+                <a href="https://21021785.github.io/L10-Assignment/"><img src="images/website-covid.png"
+                        class="images"></a>
                 <div class="overlay-text">See Website</div>
             </div>
-            <div class="col-3" style="text-align: right;">
+            <div class="col-3-5" style="text-align: right;">
                 <p>Covid-19 Website</p>
-                <p style="font-size: smaller;">This website allows users to view
-                the current COVID status of 
-                Singapore as well as vaccination
-                locations</p>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <p>World Xplore</p>
-                <p style="font-size: smaller;">This website allows users to view
-                    cruises and packages as well as
-                    booking information</p>
-            </div>
-            <div class="col-1">
-                <a href="https://21021785.github.io/"><img src="images/website-world-xplore.png" class="images" style="float: right"></a>
-                <div class="overlay-text">See Website</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1">
-                <a href="https://21021785.github.io/Exercise-Tracker/"><img src="images/website-exercise-tracker.png" class="images"></a>
-                <div class="overlay-text">See Website</div>
-            </div>
-            <div class="col-3" style="text-align: right;">
-                <p>Exercise Tracker</p>
-                <p style="font-size: smaller;">This website allows users to view
-                    the current COVID status of 
+                <p style="font-size: smaller; color: white;">This website allows users to view
+                    the current COVID status of
                     Singapore as well as vaccination
                     locations</p>
-                
+                    <button class="read-more-button" data-modal-id="myModal1">Read More</button>
 
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <p>Hotel Review and Booking</p>
-                <p style="font-size: smaller;">This website allows users to view
-                    and book hotels as well as leave 
-                    and view reviews
-                    </p>
+            <div class="col-3-5">
+                <p>World Xplore</p>
+                <p style="font-size: smaller; color: white;">This website allows users to view
+                    cruises and packages as well as
+                    booking information</p>
+                    <button class="read-more-button" data-modal-id="myModal2">Read More</button>
             </div>
-            <div class="col-1">
-                <a href="https://github.com/21021785/Hotel-Review-and-Booking"><img src="images/website-hotels.png" class="images" style="float: right"></a>
+            <div class="col-2-5">
+                <a href="https://21021785.github.io/"><img src="images/website-world-xplore.png" class="images"
+                        style="float: right"></a>
+                <div class="overlay-text">See Website</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2-5">
+                <a href="https://21021785.github.io/Exercise-Tracker/"><img src="images/website-exercise-tracker.png"
+                        class="images"></a>
+                <div class="overlay-text">See Website</div>
+            </div>
+            <div class="col-3-5" style="text-align: right;">
+                <p>Exercise Tracker</p>
+                <p style="font-size: smaller; color: white;">This website allows users to view
+                    the current COVID status of
+                    Singapore as well as vaccination
+                    locations</p>
+                    <button class="read-more-button" data-modal-id="myModal3">Read More</button>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3-5">
+                <p>Hotel Review and Booking</p>
+                <p style="font-size: smaller; color: white;">This website allows users to view
+                    and book hotels as well as leave
+                    and view reviews
+                </p>
+                <button class="read-more-button" data-modal-id="myModal4">Read More</button>
+            </div>
+            <div class="col-2-5">
+                <a href="https://github.com/21021785/Hotel-Review-and-Booking"><img src="images/website-hotels.png"
+                        class="images" style="float: right"></a>
                 <div class="overlay-text">See Source Code</div>
             </div>
         </div>
     </div>
 
+
+    <!-- First Modal -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/website-covid.png" style="text-align: center; width: 50%;">
+                <h1 style="font-size: 50px;">Covid-19 Website</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This website can help to keep track of the current COVID status, progress and vaccination centres.<br>
+                It was made as an assignment in one of my modules and was made in 1 day.
+            </p>
+            <p style="color: white; font-size: 20px;">Note: This is purely front-end work, there is no connection to current data and data is not updated.</p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: HTML, CSS, JavaScript, Bootstrap, Chart.js, Anime.js, Fullpage.js</p>
+        </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/website-world-xplore.png" style="text-align: center; width: 50%;">
+                <h1 style="font-size: 50px; text-align: center;">World Xplore</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This website was made for a fictional company called World Xplore.<br>
+                Through this website, people can read articles, see tour packages, find out about Singapore, find out about cruises and contact the company.
+                We were tasked to make everything ourselves, including the logo. We were also told not to use any frameworks and were limited to HTML and CSS only.<br>
+                It was made as an assignment in one of my modules and was made in 3 days.
+            </p>
+            <p style="color: white; font-size: 20px;">Note: The articles do not have any content and only the home page, Rediscover Singapore and Cruises have content. This was the requirement of the assignment.</p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: HTML, CSS</p>
+        </div>
+    </div>
+
+    <!-- Third Modal -->
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/website-exercise-tracker.png" style="text-align: center; width: 50%;">
+                <h1 style="font-size: 50px;">Exercise Tracker</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This website can help keep track of someone's exercise. It has running, cycling and weightlifting as the 3 stages the user must complete. The user must complete each activity as well as its requirements before moving to the next stage.<br>
+                The user will be asked to input their statistics over the week and a chart will appear, visualising the user's activity and will either allow them to proceed to the next activity or inform them that they have not met the requirement.<br>
+                It was made as an end-module project in one of my modules and was made in around a week.
+            </p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: HTML, CSS, JavaScript, Bootstrap, Chart.js, Anime.js, Fullpage.js</p>
+        </div>
+    </div>
+
+    <!-- Fourth Modal -->
+    <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <a class="close">&times;</a>
+            <div style="text-align: center;">
+                <img src="images/website-hotels.png" style="text-align: center; width: 50%;">
+                <h1 style="font-size: 50px;">Hotel Review and Booking</h1>
+            </div>
+            <p style="color: white; font-size: 20px;">
+                This website can allow a user to view, book and rate hotels around Singapore. It also checks who is being logged in, which affects their access. For example, admins have access to deleteing anybody's review and users can only post, edit and delete their own review.<br>
+                Using cookies, the website knows who is being logged in, which affects functionality, as stated above. Login details can also be saved for easier log in when a user logs out.<br>
+                There have been cybersecurity features implented such as hashing and prevention of SQL injection.<br>
+                The reason that there is no Github website for this is because it contains data from a local database set up in mysql and that Github cannot host PHP websites.<br>
+                It was made as an end-module project in one of my modules and was made in 1 day.
+            </p>
+            <p style="color: white; font-size: 20px;">Note: This is purely front-end work, there is no connection to current data and data is not updated.</p>
+            <p style="color: white; font-size: 20px; text-align: center;">Technologies used: HTML, CSS, PHP, JavaScript, Bootstrap</p>
+        </div>
+    </div>
+
     <script src="scripts/root.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 var cursorContainer = document.querySelector('.cursor-container');
 var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
-var a = document.querySelectorAll('a');
+var a = document.querySelectorAll('a, button');
 
 cursorContainer.style.transform = 'translateX(-9999px)';
 
