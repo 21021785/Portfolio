@@ -97,7 +97,7 @@ article {
 
 
 .col-6 {
-    display: inline-block;
+    display: inline-table;
     width: 47%;
 }
 
